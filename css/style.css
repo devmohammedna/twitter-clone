@@ -129,11 +129,10 @@ main{
     justify-content: flex-end;
     padding-top: 10px;
 }
-.icon-tweet > span {
+
+.icon-tweet > i {
     margin-left: 30px;
     cursor: pointer;
-}
-.icon-tweet > span > i {
     font-size: 1.3rem;
 }
            /****   End Main    ****/
