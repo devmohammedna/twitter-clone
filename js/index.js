@@ -1,9 +1,10 @@
 let dataTweet = [];
 class Tweet {
-  constructor(username, tweet) {
+  constructor(username, tweet,like,retweet) {
     (this.username = username),
-      (this.tweet = tweet)
-     
+      (this.tweet = tweet),
+      (this.like = like),
+      (this.retweet =retweet)
   }
 }
 const btnSubmit = document.querySelector('#submit');
@@ -11,10 +12,12 @@ let _username = document.getElementById("username");
 let _tweet = document.getElementById("newtweet");
 
 function addNewTweet() {
+  let like = "far";
+  let retweet = "fas";
   let username = _username.value
   let tweet = _tweet.value
   console.log(dataTweet)
-  let newTweet = new Tweet(username, tweet );
+  let newTweet = new Tweet(username, tweet, like, retweet);
   dataTweet.unshift(newTweet);
   let newtweet = document.getElementById("content-newtweet")
 
