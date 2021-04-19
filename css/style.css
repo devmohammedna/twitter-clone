@@ -108,7 +108,6 @@ main{
 }
 .newsfeed > .container > h2{
     font-size: 1.3rem;
-    letter-spacing: .1em;
     line-height: 1.5;
 }
 .newsfeed > .container > .tweetfeed {
@@ -116,11 +115,12 @@ main{
     word-break: break-word;
     margin-top: 20px;
 }
-.newsfeed > .container > div > p {
+.newsfeed > .container > p {
     width: 100%;
     font-size: 1.1rem;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     line-height: 1.5;
+    margin: 10px;
 }
 .icon-tweet{
     margin-top: 20px;
