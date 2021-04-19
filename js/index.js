@@ -21,7 +21,7 @@ function addNewTweet() {
   dataTweet.unshift(newTweet);
   let newtweet = document.getElementById("content-newtweet")
 
-  clearLibrary(newtweet);
+  clearTweet(newtweet);
   createNewTweet();
 
 }
@@ -62,7 +62,7 @@ btnSubmit.addEventListener("click",(e)=>{
 }) ;
 
 
-function clearLibrary(newtweet) {
+function clearTweet(newtweet) {
   while (newtweet.firstChild) {
     newtweet.removeChild(newtweet.firstChild);
   }
